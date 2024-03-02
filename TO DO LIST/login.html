@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validated Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <style>
+            /* CSS styles for the wrapper and other elements */
+            .wrapper {
+                height: 100vh;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            /* Media query for wider screens */
+            @media (min-width: 600px) {
+                .wrapper {
+                    height: 50rem;
+                    width: 25rem;
+                    border-radius: 40px;
+                    border: 10px solid #2e2e2e;
+                }
+            }
+
+            /* Screen background styles */
+            .screen-background {
+                width: 100%;
+                height: 20%;
+                background-color: rgb(202, 124, 124);
+                display: flex;
+            }
+
+            /* Other styles for the login form */
+            /* Your existing styles here */
+        </style>
+
+        <!-- Your HTML content -->
+        <div class="container">
+            <h1 class="label">User Login</h1>
+            <form class="login_form" action="todo.html" method="post" name="form" onsubmit="return validated()">
+                <div class="font">Email or Phone</div>
+                <input autocomplete="off" type="text" name="email">
+                <div id="email_error">Please fill up your Email or Phone</div>
+                <div class="font font2">Password</div>
+                <input type="password" name="password">
+                <div id="pass_error">Please fill up your Password</div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>

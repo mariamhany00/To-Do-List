@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    color: #2e2e2e;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.wrapper{
+ 
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+@media  (min-width: 600px) {
+    .wrapper{
+        height: 50rem;
+        width: 25rem;
+        border-radius: 40px;
+        border: 10px solid #2e2e2e ;
+     
+    }
+  
+}
+.screen-background{
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    border-radius: 0 0 50% 50%;
+    display: flex;
+}
+
+.Text{
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+ img{
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+.photo img {
+    width: 100%; /* Set the width of the image to 100% of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
